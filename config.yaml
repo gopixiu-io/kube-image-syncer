@@ -1,9 +1,10 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.1.1
+  - registry.k8s.io/gateway-api/admission-server:v0.7.1
