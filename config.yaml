@@ -1,9 +1,10 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - jacky06/kubez-ansible:v2.0.0
+  - jacky06/kubez-ansible:v3.0.0
