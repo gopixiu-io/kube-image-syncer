@@ -6,5 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.1.1
-  - registry.k8s.io/gateway-api/admission-server:v0.7.1
+  - kasmweb/chrome:1.8.0-edge
