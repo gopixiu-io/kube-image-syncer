@@ -1,9 +1,11 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - registry.k8s.io/autoscaling/vpa-recommender:1.0.0
+  - registry.k8s.io/autoscaling/vpa-updater:1.0.0
+  - registry.k8s.io/autoscaling/vpa-admission-controller:1.0.0
