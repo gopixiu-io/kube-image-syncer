@@ -1,5 +1,5 @@
 default:
-  push_kubernetes: false
+  push_kubernetes: true
   push_images: false
 
 kubernetes:
