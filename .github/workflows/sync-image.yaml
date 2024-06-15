@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  REGISTRY: harbor.cloud.pixiuio.com
+  REPOSITORY: pixiuio
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,12 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: install kubernetes repo
-        run: sudo apt-get update &&
-             sudo apt-get install -y apt-transport-https ca-certificates curl &&
-             curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg &&
-             echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list &&
-             sudo apt-get update
-
-      - name: publish kubernetes images
-        run: chmod +x ./app && ./app -v 2
+      - name: publish kubernetes or custom images
+        run: chmod +x ./app && ./app -v 2 --harbor ${{ env.REGISTRY }} --image-repository ${{ env.REPOSITORY } --user ${{ secrets.HARBOR_NAME }} --password ${{ secrets.HARBOR_PASSWORD }}
