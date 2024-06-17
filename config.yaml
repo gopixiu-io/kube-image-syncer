@@ -7,4 +7,4 @@ kubernetes:
 
 images:
   - docker.io/nginx:latest
-  - odcker.io/mongo:nanoserver-ltsc2022
+  - dodcker.io/mongo:nanoserver-ltsc2022
