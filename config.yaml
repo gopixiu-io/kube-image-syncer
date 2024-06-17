@@ -7,4 +7,4 @@ kubernetes:
 
 images:
   - docker.io/nginx:latest
-  - docker.io/mongo:nanoserver-ltsc2022
+  - docker.io/pixiuio/csi-node-driver-registrar:v2.8.0
