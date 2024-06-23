@@ -1,9 +1,12 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - docker.io/jacky06/metrics-server:v0.5.2
+  - docker.io/jacky06/addon-resizer:1.8.14
+  - docker.io/jacky06/nginx-ingress-controller:v1.2.0
+  - docker.io/jacky06/nginx-ingress-webhook:v1.1.1
