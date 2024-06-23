@@ -10,3 +10,15 @@ images:
   - docker.io/jacky06/addon-resizer:1.8.14
   - docker.io/jacky06/nginx-ingress-controller:v1.2.0
   - docker.io/jacky06/nginx-ingress-webhook:v1.1.1
+  - docker.io/pixiuio/resolvers:v0.43.2
+  - docker.io/pixiuio/controller:v0.43.2
+  - docker.io/pixiuio/webhook:v0.43.2
+  - docker.io/pixiuio/dashboard:v0.31.0
+  - docker.io/pixiuio/csi-provisioner:v3.3.0
+  - docker.io/pixiuio/livenessprobe:v2.8.0
+  - docker.io/pixiuio/nfsplugin:v4.2.0
+  - docker.io/pixiuio/livenessprobe:v2.8.0
+  - docker.io/pixiuio/csi-node-driver-registrar:v2.6.2
+  - docker.io/pixiuio/nfsplugin:v4.2.0
+  - docker.io/pixiuio/livenessprobe:v2.8.0
+  - docker.io/pixiuio/lsplugin:v1.0.0
