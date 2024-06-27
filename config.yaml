@@ -6,4 +6,8 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/apache/apisix-ingress-controller:1.6.0
+  - docker.io/bitnami/apisix:3.9.1-debian-12-r4
+  - docker.io/bitnami/apisix-dashboard:3.0.1-debian-12-r34
+  - docker.io/bitnami/apisix-ingress-controller:1.8.2-debian-12-r6
+  - docker.io/bitnami/os-shell:12-debian-12-r22
+  - docker.io/bitnami/etcd:3.5.14-debian-12-r1
