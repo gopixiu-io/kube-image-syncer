@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - registry.k8s.io/metrics-server/metrics-server:v0.6.2
+  - docker.io/bitnami/zookeeper:3.8.2-debian-11-r4
