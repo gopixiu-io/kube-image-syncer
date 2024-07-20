@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  REGISTRY: harbor.cloud.pixiuio.com
+  REGISTRY: ccr.ccs.tencentyun.com
   REPOSITORY: pixiuio
 
 jobs:
