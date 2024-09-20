@@ -7,3 +7,4 @@ kubernetes:
 
 images:
   - kubernetesui/metrics-scraper:v1.0.4
+  - kubernetesui/dashboard:v2.0.0
