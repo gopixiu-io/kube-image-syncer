@@ -1,9 +1,11 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - kubesphere/ks-apiserver:v3.4.1
+  - kubesphere/ks-console:v3.4.1
+  - kubesphere/ks-controller-manager:v3.4.1
