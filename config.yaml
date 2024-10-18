@@ -11,3 +11,4 @@ images:
   - quay.io/kiwigrid/k8s-sidecar:1.27.4
   - docker.io/curlimages/curl:7.85.0
   - docker.io/library/busybox:1.31.1
+  - quay.io/prometheus/node-exporter:v1.8.2
