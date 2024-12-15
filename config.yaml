@@ -6,4 +6,5 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/golang:1.17-alpine
+  - docker.io/registry:2
+  - docker.io/nginx:1.27.3
