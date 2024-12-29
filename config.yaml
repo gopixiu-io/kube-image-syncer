@@ -1,9 +1,11 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - harbor.cloud.pixiuio.com/pixiuio/kubez-ansible:v2.0.1
+  - harbor.cloud.pixiuio.com/pixiuio/kubez-ansible:v3.0.1
+  - harbor.cloud.pixiuio.com/pixiuio/mysql:5.7
