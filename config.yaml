@@ -1,6 +1,6 @@
 default:
   push_kubernetes: false
-  push_images: true
+  push_images: false
 
 kubernetes:
   version: v1.23.6
